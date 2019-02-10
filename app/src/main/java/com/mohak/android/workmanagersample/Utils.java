@@ -13,8 +13,8 @@ import static android.content.Context.NOTIFICATION_SERVICE;
 public class Utils {
 
     public static final int NOTIFICATION_ID = 22;
-    private static final String CHANNEL_ID = "notify-tea";
-    private static final String CHANNEL_NAME = "tea-reminder";
+    private static final String CHANNEL_ID = "notify";
+    private static final String CHANNEL_NAME = "workmanager-reminder";
 
 
     static void sendNotification(Context context) {
@@ -31,7 +31,7 @@ public class Utils {
         }
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, CHANNEL_ID)
-                .setContentTitle("Test")
+                .setContentTitle("WorkManager Sample")
                 .setContentText("WorkManager Started")
                 .setAutoCancel(true)
                 .setSmallIcon(R.drawable.ic_launcher_foreground);
