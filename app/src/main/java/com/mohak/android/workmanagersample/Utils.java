@@ -31,7 +31,7 @@ public class Utils {
         }
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, CHANNEL_ID)
-                .setContentTitle("WorkManager Sample")
+                .setContentTitle("Test")
                 .setContentText("WorkManager Started")
                 .setAutoCancel(true)
                 .setSmallIcon(R.drawable.ic_launcher_foreground);
